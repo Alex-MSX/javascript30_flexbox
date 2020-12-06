@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  /* Nos permite ver el tamaño del flexbox */
+  border: solid 10px goldenrod;
+
+  /* hace que mi flexbox sea del tamaño de la pantalla vh = viewport height */
+  height: 100vh;
+
+  /* Inicializa flexbox */
+  display: flex;
+}
+
+.box {
+  color: white;
+  font-size: 100px;
+  padding: 10px;
+  text-align: center;
+
+  /* otorga tamaño a cada hijo. Si el tamaño es superior al flexbox, distribuye uniformemente los items */
+  width: 500px;
+}
+
+.box1 {background: #2D3047}
+.box2 {background: #C04ABC}
+.box3 {background: #E0A458}
+.box4 {background: #F55536}
+.box5 {background: #41337A}
+.box5 {background: #91CB3E}
+.box6 {background: #FCFF6C}
+.box7 {background: #1B9AAA}
+.box8 {background: #FFC43D}
+.box9 {background: #06D6A0}
+.box10 {background: #B23A48}

@@ -1,0 +1,41 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: sans-serif;
+}
+
+.container {
+border: solid 10px goldenrod;
+height: 100vh;
+
+display: flex;
+
+/* Coloca los elementos en row y tiene sentido para los items poner un width: 25% y los envolverá en columnas de 4*/
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+.box {
+color: white;
+font-size: 100px;
+padding: 10px;
+text-align: center;
+
+/* otorga height a cada hijo sin salirse del flexbox - tiene sentido con flex-direction: column */
+height: 25%;
+}
+
+.box1 {background: #2D3047}
+.box2 {background: #C04ABC}
+.box3 {background: #E0A458}
+.box4 {background: #F55536}
+.box5 {background: #41337A}
+.box5 {background: #91CB3E}
+.box6 {background: #FCFF6C}
+.box7 {background: #1B9AAA}
+.box8 {background: #FFC43D}
+.box9 {background: #06D6A0}
+.box10 {background: #B23A48}
