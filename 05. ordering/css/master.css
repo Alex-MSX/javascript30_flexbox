@@ -1,0 +1,47 @@
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  color: white;
+  font-size: 100px;
+  padding: 10px;
+  text-align: center;
+
+  /* Otorga el mismo tamaño a cada uno de los elementos */
+  flex: 1;
+}
+
+.box3 {
+  /* El default order es 0, es decir que puedo elegir el orden a partir de 0 y acepta negativos*/
+  order: 5;
+}
+
+.box7 {
+  order: 2;
+}
+
+.box5 {
+  order: -1
+}
+
+.box1 {background: #2D3047}
+.box2 {background: #C04ABC}
+.box3 {background: #E0A458}
+.box4 {background: #F55536}
+.box5 {background: #41337A}
+.box5 {background: #91CB3E}
+.box6 {background: #FCFF6C}
+.box7 {background: #1B9AAA}
+.box8 {background: #FFC43D}
+.box9 {background: #06D6A0}
+.box10 {background: #B23A48}

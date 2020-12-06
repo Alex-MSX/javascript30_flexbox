@@ -1,0 +1,45 @@
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  border: solid 10px goldenrod;
+  height: 100vh;
+  display: flex;
+
+  /* align-items: va sobre el contenedor y alinea a los elementos en relación a cross-axis. Puede tomar valores */
+  /* stretch: es el default y estira todo */
+  /* flex-start: lo coloca hasta arriba */
+  /* flex-end: lo coloca hasta abajo */
+  /* center: lo coloca centrado */
+  /* baseline: lo centra de acuerdo a su texto (necesitan tener diferentes tamaños para funcionar) */
+
+  /* Si la dirección es horizontal, el contenedor debe de ser más alto que el height de sus items para notar el efecto. Por default el tamaño del contenedor es igual al tamaño de sus items */
+
+  align-items: center;
+}
+
+.box {
+  color: white;
+  font-size: 100px;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.box1 {background: #2D3047}
+.box2 {background: #C04ABC}
+.box3 {background: #E0A458}
+.box4 {background: #F55536}
+.box5 {background: #41337A}
+.box5 {background: #91CB3E}
+.box6 {background: #FCFF6C}
+.box7 {background: #1B9AAA}
+.box8 {background: #FFC43D}
+.box9 {background: #06D6A0}
+.box10 {background: #B23A48}

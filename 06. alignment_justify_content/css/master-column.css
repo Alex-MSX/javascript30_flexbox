@@ -1,0 +1,44 @@
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: va sobre el contenedor y distribuye los elementos en relación a main-axis. Puede tomar los siguientes valores */
+  /* center: centra los elementos */
+  /* flex-start: deja los elementos a la izquierda */
+  /* flex-end: deja los elementos a la derecha */
+  /* space-around: distribuye el espacio entre todos los elementos (considerando inicio y final) */
+  /* space-between: distribuye el espacio entre todos los elementos (sin considerar inicio y final) */
+
+  /* Si la dirección es vertical, el contenedor debe de ser más grande que la suma de sus items para notar el efecto. Por default el tamaño del contenedor en vertical es igual a la suma de sus items */
+  justify-content: center;
+}
+
+.box {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.box1 {background: #2D3047}
+.box2 {background: #C04ABC}
+.box3 {background: #E0A458}
+.box4 {background: #F55536}
+.box5 {background: #41337A}
+.box5 {background: #91CB3E}
+.box6 {background: #FCFF6C}
+.box7 {background: #1B9AAA}
+.box8 {background: #FFC43D}
+.box9 {background: #06D6A0}
+.box10 {background: #B23A48}
