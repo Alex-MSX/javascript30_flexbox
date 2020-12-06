@@ -1,0 +1,63 @@
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  color: white;
+  font-size: 50px;
+  padding: 10px;
+  text-align: center;
+
+  /* flex: se compone de flex-grow | flex-shrink | flex-basis */
+
+  /* flex-grow: distribuye el espacio restante a todos los items del flex al crecer */
+  /* flex-shrink: al reducir el tamaño, gestiona cómo se van a encoger todos los items del flex */
+  /* flex-basis: otorga el tamaño a todos los items del flex */
+}
+
+.box1 {
+  flex-basis: 400px;
+
+  /* Al crecer, tu no crezcas */
+  flex-grow: 0;
+
+  /* Al encogerte, tu si encogete*/
+  flex-shrink: 1;
+
+  /* resumen */
+  /* flex: 0 1 400px; */
+}
+
+.box2 {
+  flex-basis: 400px;
+
+  /* Al crecer, utiliza todo el espacio */
+  flex-grow: 1;
+
+  /* Al encogerte, quedate en tu flex-basis */
+  flex-shrink: 0;
+
+  /* resumen */
+  /* flex: 1 0 400px; */
+}
+
+.box1 {background: #2D3047}
+.box2 {background: #C04ABC}
+.box3 {background: #E0A458}
+.box4 {background: #F55536}
+.box5 {background: #41337A}
+.box5 {background: #91CB3E}
+.box6 {background: #FCFF6C}
+.box7 {background: #1B9AAA}
+.box8 {background: #FFC43D}
+.box9 {background: #06D6A0}
+.box10 {background: #B23A48}

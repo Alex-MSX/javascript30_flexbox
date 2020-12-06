@@ -1,0 +1,50 @@
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  border: solid 10px goldenrod;
+  height: 100vh;
+  display: flex;
+
+  align-items: flex-start;
+}
+
+.box {
+  color: white;
+  font-size: 100px;
+  padding: 10px;
+  text-align: center;
+
+  width: 33.33%
+}
+
+.box3 {
+  /* align-self: va en el item y sirve para hacer override de align-items */
+  align-self: center;
+}
+
+.box5 {
+  align-self: stretch;
+}
+
+.box8 {
+  align-self: flex-end;
+}
+
+.box1 {background: #2D3047}
+.box2 {background: #C04ABC}
+.box3 {background: #E0A458}
+.box4 {background: #F55536}
+.box5 {background: #41337A}
+.box5 {background: #91CB3E}
+.box6 {background: #FCFF6C}
+.box7 {background: #1B9AAA}
+.box8 {background: #FFC43D}
+.box9 {background: #06D6A0}
+.box10 {background: #B23A48}
