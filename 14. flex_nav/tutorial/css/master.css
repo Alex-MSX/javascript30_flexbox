@@ -29,7 +29,7 @@ a:hover {
 
 .wrapper {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -38,7 +38,6 @@ a:hover {
   margin: 0;
   padding: 0;
   border: 1px solid black;
-
   display: flex;
 }
 
