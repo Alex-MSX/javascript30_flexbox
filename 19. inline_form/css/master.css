@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background:white;
+  border: 20px solid rgba(0,0,0,0.2);
+  background-clip: padding-box;
+  border-radius: 10px;
+
+  display: flex;
+}
+
+form [type="submit"] {
+  background:#FF5A5F;
+  color: white;
+  border: none;
+}
+
+form > * {
+  border: none;
+  padding: 20px;
+}
+
+form > *:not([type="date"]) {
+  border-right: 1px solid rgba(0,0,0,0.1);
+  border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+form [type="text"] {
+  flex-basis: 300px;
+}
