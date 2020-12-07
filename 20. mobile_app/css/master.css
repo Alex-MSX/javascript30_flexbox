@@ -1,0 +1,124 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+}
+
+.app-wrap {
+  max-width: 350px;
+  height: 90vh;
+  margin: 40px auto;
+  background: black;
+  border-radius: 10px;
+  padding: 30px 5px;
+}
+
+img {
+  float: left;
+  width: 40%;
+  margin-right: 10px;
+}
+
+.app-header {
+  background: #f0cb45;
+  color: rgb(153, 100, 51);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.app-header a {
+  font-size: 14px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.app-header a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.app-header h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content {
+  padding: 10px 5px;
+  background: white;
+  font-size: 10px;
+}
+
+.icon-bar {
+  background: #f0cb45;
+}
+
+.icon-bar a {
+  text-align: center;
+  color: rgb(153, 100, 51);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.icon-bar a > i {
+  font-size: 18px;
+  padding: 5px;
+  color: white;
+}
+
+.icon-bar a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Flexboxes */
+
+/* flexbox principal */
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-wrap > * {
+  flex: 1 1 auto;
+}
+
+.content {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* flexbox para app-header */
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* flexbox para icon-bar */
+.icon-bar {
+  display: flex;
+}
+
+.icon-bar > a {
+  flex: 1;
+}
+
+/* flexbox para cada boton del icon-bar */
+.icon-bar a {
+  display: flex;
+  flex-direction: column;
+}
